@@ -1,5 +1,7 @@
 # Catalyst UI
 
+**Live Demo:** [https://catalyst-ui-livid.vercel.app](https://catalyst-ui-livid.vercel.app)
+
 A personal project to build and document a set of reusable, modern UI components from scratch. This showcase demonstrates clean code, scalability, and best practices.
 
 ### [cite_start]Description of Approach [cite: 66]
