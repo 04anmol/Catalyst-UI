@@ -1,69 +1,38 @@
-# React + TypeScript + Vite
+# Catalyst UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal project to build and document a set of reusable, modern UI components from scratch. This showcase demonstrates clean code, scalability, and best practices.
 
-Currently, two official plugins are available:
+### [cite_start]Description of Approach [cite: 66]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I built two main components, `InputField` and `DataTable`, completely from scratch using a modern tech stack. The focus was on creating flexible and reusable components with a clean API, documented thoroughly using Storybook. [cite_start]Styling was handled with Tailwind CSS for a utility-first approach, and all code is written in TypeScript for type safety[cite: 53]. [cite_start]The project also includes basic unit tests to ensure component reliability.
 
-## Expanding the ESLint configuration
+### Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Storybook**
+- **Vite**
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Setup and Running the Project
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/](https://github.com/)04anmol/Catalyst-UI.git
+    ```
+2.  Navigate to the project directory:
+    ```bash
+    cd Catalyst-UI
+    ```
+3.  Install dependencies:
+    ```bash
+    npm install
+    ```
+4.  Run the development server:
+    ```bash
+    npm run dev
+    ```
+5.  Run Storybook to view the components:
+    ```bash
+    npm run storybook
+    ```
