@@ -8,11 +8,13 @@ I built two main components, `InputField` and `DataTable`, completely from scrat
 
 ### Tech Stack
 
-- **React**
-- **TypeScript**
-- **Tailwind CSS**
-- **Storybook**
-- **Vite**
+- **React 19** - Latest React with modern features
+- **TypeScript** - Full type safety and modern JavaScript
+- **Tailwind CSS v4** - Utility-first CSS framework
+- **Storybook** - Component documentation and testing
+- **Vite** - Fast build tool and dev server
+- **Vitest** - Unit testing framework
+- **Testing Library** - React component testing utilities
 
 ### Setup and Running the Project
 
@@ -36,3 +38,33 @@ I built two main components, `InputField` and `DataTable`, completely from scrat
     ```bash
     npm run storybook
     ```
+6.  Run tests:
+    ```bash
+    npm test
+    ```
+7.  Build for production:
+    ```bash
+    npm run build
+    ```
+8.  Lint code:
+    ```bash
+    npm run lint
+    ```
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm test` - Run unit tests with Vitest
+- `npm run storybook` - Start Storybook dev server
+- `npm run build-storybook` - Build Storybook for production
+
+### Testing
+
+The project includes a comprehensive testing setup:
+- **Vitest** for fast unit testing
+- **Testing Library** for React component testing
+- **jsdom** for browser environment simulation
+- Tests are located in `src/components/*/ComponentName.test.tsx`
